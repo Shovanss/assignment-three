@@ -6,6 +6,10 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- Manrope Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
 <script src="https://kit.fontawesome.com/262f0b2700.js" crossorigin="anonymous"></script>
 <script>
@@ -20,13 +24,20 @@
       }
     }
   </script>
+  <style>
+    .font-manrope{
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
-<body class="container mx-auto">
+
+
+<body class="container mx-auto font-manrope">
     <header>
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start sm:gap-x-10">
-                  <div class="dropdown">
+                  <div class="dropdown lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
@@ -82,8 +93,8 @@
             </div> 
           </div>
           <!-- Using for responsive -->
-          <div class="mx-auto bg-[#131318] h-[180px] w-[330px] -translate-y-20 p-7 text-center justify-center  items-center rounded-2xl w-1/3 lg:hidden">
-            <h2 class="text-white">Meet all the heroes from the  field</h2>
+          <div class="mx-auto bg-[#131318] h-[180px] w-[360px] -translate-y-20 p-7 text-center justify-center  items-center rounded-2xl w-1/3 space-y-2 lg:hidden">
+            <h2 class="text-white font-extrabold">Meet all the heroes from the  field</h2>
             <p class="text-[#FFFFFF99] font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
           </div>
 
@@ -91,6 +102,9 @@
     
     <main>
       <section>
+
+<!-- Progress Bar Section -->
+
         <div class="text-center space-y-7 px-8">
           <hr class="text-[#13131833] border border-dashed">
           <h2 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h2>
@@ -103,22 +117,22 @@
             <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-black font-extrabold text-xl">87%</span>
                     </div>
                     <h2 class="text-xl font-semibold pt-4">Prayer Facility</h2>
-                  <p class="pt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                  <p class="pt-3 text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
                     <div class="items-center justify-center text-center">
                       <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-black font-extrabold text-xl">95%</span></div>
                     <h2 class="text-xl font-semibold pt-4">Experienced Coach</h2>
-                  <p class="pt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                  <p class="pt-3 text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
                     <div class="items-center justify-center text-center">
                       <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-black font-extrabold text-xl">90%</span></div>
                     <h2 class="text-xl font-semibold pt-4">Senior Player</h2>
-                  <p class="pt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                  <p class="pt-3 text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
             <div class="items-center justify-center text-center">
               <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-black font-extrabold text-xl">80%</span></div>
               <h2 class="text-xl font-semibold pt-4">Training Ground</h2>
-              <p class="pt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+              <p class="pt-3 text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
             </div>
             </div>
         </div>
@@ -135,7 +149,7 @@
   </div>
 
 <div>
-  <div class="flex flex-col gap-6 lg:flex-row mx-auto">
+  <div class="flex flex-col gap-6 lg:flex-row mx-auto mt-12">
     <div class="card w-96 bg-base-100 shadow-xl image-full bg-[url(./Images/2.png)] bg-cover bg-contain mx-auto w-[360px] lg:w-[570px]">
       <div class="card-body rounded-2xl gap-y-5">
         <h2 class="card-title text-[#FFF] text-3xl font-extrabold mt-4">Junior Program</h2>
@@ -148,7 +162,7 @@
     </div>
     <div class="card w-96 bg-base-100 shadow-xl image-full bg-[url(./Images/3.png)] bg-cover bg-contain mx-auto w-[360px] lg:w-[570px]">
       <div class="card-body  bg-cover rounded-2xl gap-y-5">
-        <h2 class="card-title text-[#FFF] text-3xl font-extrabold mt-4">Junior Program</h2>
+        <h2 class="card-title text-[#FFF] text-3xl font-extrabold mt-4">Teenager Program</h2>
         <p class="text-[#FFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
           enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
         <div class="card-actions justify-start">
@@ -160,7 +174,7 @@
    <div>
     <div class="card w-96 bg-base-100 shadow-xl image-full bg-[url(./Images/4.png)] bg-cover bg-contain w-[360px] mx-auto lg:h-[360px] lg:w-[1220px] my-6">
         <div class="card-body justify-start gap-y-5">
-          <h2 class="card-title text-[#FFF] text-3xl font-extrabold lg:mt-24">Junior Program</h2>
+          <h2 class="card-title text-[#FFF] text-3xl font-extrabold lg:mt-24">Professional Program</h2>
           <p class="text-[#FFF]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
             <br>
             enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
@@ -187,31 +201,31 @@
 <div class="flex flex-col lg:flex-row mx-auto gap-5 my-12">
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/5.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/5.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-10 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">5.0</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">20</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">200</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
-          <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <h1 class="text-xl font-extrabold">Red And White Jacket</h1>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:justify-center lg:items-center lg:gap-5">
-            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
+            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $45.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -225,31 +239,31 @@
   </div>
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/6.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/6.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-8 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">4.0</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">20</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">100</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
           <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:gap-5">
             <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -266,31 +280,31 @@
 <div class="flex flex-col lg:flex-row mx-auto gap-5 my-6">
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/7.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/7.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-10 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">4.5</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">20</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">300</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
-          <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <h1 class="text-xl font-extrabold">Cap For Hockeys</h1>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:justify-center lg:items-center lg:gap-5">
-            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
+            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $20.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -304,31 +318,31 @@
   </div>
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/8.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/8.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-8 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">3.8</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">20</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">120</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
-          <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <h1 class="text-xl font-extrabold">Jersey For Hockeys</h1>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:gap-5">
-            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
+            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $15.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -344,31 +358,31 @@
 <div class="flex flex-col lg:flex-row mx-auto gap-5 my-6">
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/9.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/9.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-10 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">4.6</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">28</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">320</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
-          <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <h1 class="text-xl font-extrabold">Helmet For Hockeys</h1>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:justify-center lg:items-center lg:gap-5">
-            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
+            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $45.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -382,31 +396,31 @@
   </div>
   <div class="hero flex border-solid border-[#1313181A] rounded-2xl w-[360px] lg:w-[590px] container mx-auto">
     <div class="hero-content flex-col lg:flex-row rounded-2xl ">
-      <img src="Images/10.png" class="max-w-sm lg:w-[360px] rounded-lg " />
+      <img src="Images/10.png" class="max-w-sm lg:w-[290px] rounded-lg " />
       <div class="space-y-5 space-x-5">
         <div class="flex gap-8 justify-center">
           <div>
             <img src="Images/Star.png" alt="">
-            <p>5.0</p>
+            <p class="text-[#13131880]">5.0</p>
           </div>
           <div>
             <img src="Images/Eye.png" alt="">
-            <p>20</p>
+            <p class="text-[#13131880]">20</p>
           </div>
           <div>
             <img src="Images/Heart.png" alt="">
-            <p>200</p>
+            <p class="text-[#13131880]">400</p>
           </div>
         </div>
         <div class="space-y-5 text-center">
-          <h1 class="text-xl font-extrabold">World Cup Flags Football</h1>
-          <p class="text-center">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <h1 class="text-xl font-extrabold">Stylish Deer Football</h1>
+          <p class="text-center text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
           <div class="lg:flex lg:gap-5">
-            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $22.00</h3>
+            <h3 class="text-[#FF4240] font-extrabold text-center">Price - $18.00</h3>
           
               <div class="flex justify-center gap-2">
                 <img src="Images/Cart.svg">
-                <p>Delivery Fee : Free</p>
+                <p class="text-[#13131880]">Delivery Fee : Free</p>
               </div>
           
           
@@ -513,6 +527,8 @@
   </div>
 </section>
 
+<!-- Get In Touch Section -->
+
 <section class="container mx-auto mt-24 lg:px-30">
     <div class="text-center space-y-7 px-8">
       <hr class="text-[#13131833] border border-dashed">
@@ -526,101 +542,76 @@
       <div class="grid grid-cols-1 lg:grid-cols-3">
         <div class="mx-auto border-solid border-[#1313181A] rounded-2xl justify-center items-center w-[360px] lg:w-[370px] p-12 space-y-6 flex flex-col">
           <div class="bg-[#bced6e1a] rounded-2xl w-[320px] lg:h-[180px]  py-8 space-y-4 px-4 w-">
-            <div class="">
+            <div>
               <img src="Images/Group 1171275317.png" alt="">
             </div>
-            
             <div>
               <h4 class="text-[#13131866] font-normal">Phone Number :</h4>
               <p class="text-[#131318] font-extrabold">(+62) 123-321-543</p>
             </div>
-            
-          </div>
+            </div>
+
           <div class="bg-[#fddb5f1a] rounded-2xl w-[320px] lg:h-[180px]  py-8 space-y-4 px-4 w-">
-            <div class="">
+            <div>
               <img src="Images/Group 1171275318.png" alt="">
             </div>
-            
             <div>
               <h4 class="text-[#13131866] font-normal">Phone Number :</h4>
               <p class="text-[#131318] font-extrabold">(+62) 123-321-543</p>
             </div>
-            
-          </div>
+            </div>
+
           <div class="bg-[#629cf31a] rounded-2xl w-[320px] lg:h-[180px]  py-8 space-y-4 px-4 w-">
-            <div class="">
+            <div>
               <img src="Images/Group 1171275321.png" alt="">
             </div>
-            
             <div>
               <h4 class="text-[#13131866] font-normal">Phone Number :</h4>
               <p class="text-[#131318] font-extrabold">(+62) 123-321-543</p>
             </div>
-            
-          </div>
+            </div>
           </div>
         </div>
 
       <div class="lg:col-span-2 w-[360px] lg:w-[830px] mx-auto mt-4">
         <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
           <div>
-            <label for="">Your Name</label>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full mt-2" />
+            <label class="text-[#131318] font-bold text-xl" for="">Your Name</label>
+            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full mt-2 bg-[#13131805] text-[#1313184D] rounded-xl" />
           </div>
           <div>
-            <label for="">Your Email</label>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full mt-2" />
+            <label class="text-[#131318] font-bold text-xl" for="">Your Email</label>
+            <input type="text" placeholder="Enter your email" class="input input-bordered w-full mt-2 bg-[#13131805] text-[#1313184D] rounded-xl" />
           </div>
           <div>
-            <label for="">Subject</label>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full mt-2" />
+            <label class="text-[#131318] font-bold text-xl" for="">Subject</label>
+            <input type="text" placeholder="Enter your subject" class="input input-bordered w-full mt-2 bg-[#13131805] text-[#1313184D] rounded-xl" />
           </div>
           <div>
-            <label for="">Phone Number</label>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full mt-2" />
+            <label class="text-[#131318] font-bold text-xl" for="">Phone Number</label>
+            <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full mt-2 bg-[#13131805] text-[#1313184D] rounded-xl" />
           </div>
     </div>
     <div class="mt-4">
-      <label for="">Message</label>
-      <textarea class="textarea textarea-bordered w-full mt-2" placeholder="Bio" rows="14"></textarea>
+      <label class="text-[#131318] font-bold text-xl" for="">Message</label>
+      <textarea class="textarea textarea-bordered w-full mt-2 bg-[#13131805] rounded-xl text-[#1313184D]" placeholder="Write your message" rows="14"></textarea>
     </div>
     <div class="mt-2">
       <button class="btn bg-[#FF4240] w-full border-solid text-center text-white text-xl font-bold p-2  border-[#FF4240]">Send Message</button>
     </div>
-    
-    
-    
-      </div>
+     </div>
     </div>
 
-
-          
-
-
-
-
-
-<!-- Social Links -->
-<div class="container mt-12 bg-[#13131805] rounded-xl text-center lg:w-[1170px] lg:h-[170px] justify-center items-center mx-auto space-y-6">
-  <h2 class="text-[#131318] text-2xl font-extrabold pt-6">Social Media</h2>
-  <div class="flex justify-center items-center gap-4">
-<img src="Images/Twitter.png" alt="">
-<img src="Images/Facebook.png" alt="">
-<img src="Images/Instagram.png" alt="">
-<img src="Images/Linkedin.png" alt="">
+<div class="container mt-12 bg-[#13131805] rounded-xl text-center lg:w-[1170px] lg:h-[170px] w-[360px] justify-center items-center mx-auto space-y-5">
+  <h2 class="text-[#131318] text-2xl font-extrabold pt-5 text-center">Social Media</h2>
+  <div class="flex justify-center items-center text-center gap-4 pb-5">
+    <a href=""><img src="Images/Twitter.png" alt=""></a>
+    <a href=""><img src="Images/Facebook.png" alt=""></a>
+    <a href=""><img src="Images/Instagram.png" alt=""></a>
+    <a href=""><img src="Images/Linkedin.png" alt=""></a>
   </div>
-  
-
-</div>
+  </div>
 </section>
-
-
-<section class="container mx-auto">
-
-</section>
-
-<!-- Prctise -->
-
 
 </main>
 
@@ -641,14 +632,9 @@
           <p class="text-[#ffffffcc]">(+62) 123-321-543</p>
         </div>
     </nav>
-  
   <div class="flex px-10 gap-10 lg:gap-28">
     <nav class="flex flex-col">
-      <header class=" text-[#FFF] text-xl font-bold">Company</header> 
-      
-      
-      
-      
+      <header class="text-[#FFF] text-xl font-bold mb-4">Company</header> 
       <a class="link link-hover text-[#ffffff99] font-semibold">About us</a>
       <a class="link link-hover text-[#ffffff99] font-semibold">Leadership</a>
       <a class="link link-hover text-[#ffffff99] font-semibold">Careers</a>
@@ -656,19 +642,15 @@
       <a class="link link-hover text-[#ffffff99] font-semibold">Legal Notice</a>
     </nav> 
     <nav class="flex flex-col">
-      <header class="footer-title text-white text-xl font-semibold">Support</header> 
-      
-      
-      
+      <header class="text-[#FFF] text-xl font-bold mb-4">Support</header> 
       <a class="link link-hover text-[#ffffff99] font-semibold">Help Center</a>
       <a class="link link-hover text-[#ffffff99] font-semibold">FAQ</a>
       <a class="link link-hover text-[#ffffff99] font-semibold">Ticket Support</a>
       <a class="link link-hover text-[#ffffff99] font-semibold">Contact Us</a>
     </nav> 
   </div>
-  
   <nav class="mx-auto lg:gap-y-0">
-    <header class="footer-title text-[#FFF] text-xl font-semibold">Services</header> 
+    <header class="text-[#FFF] text-xl font-bold mb-4">Services</header> 
     <a class="link link-hover text-[#ffffff99] font-semibold">Academy</a>
     <a class="link link-hover text-[#ffffff99] font-semibold">Group Lesson</a>
     <a class="link link-hover text-[#ffffff99] font-semibold">Private Lesson</a>
